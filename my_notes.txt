@@ -1,0 +1,7 @@
+rake db:create:all
+rake db:migrate
+
+to start:
+in cmd prompt: postgres
+in other cmd prompt: trivia> rails s
+http://localhost:3000/ -> see the page
