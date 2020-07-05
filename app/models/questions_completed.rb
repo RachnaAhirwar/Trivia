@@ -1,0 +1,2 @@
+class QuestionsCompleted < ApplicationRecord
+end

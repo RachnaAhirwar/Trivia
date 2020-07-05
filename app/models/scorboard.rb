@@ -1,0 +1,2 @@
+class Scorboard < ApplicationRecord
+end

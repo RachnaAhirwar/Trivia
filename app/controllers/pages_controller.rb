@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
 
-	def index
+	def login
 	end
 end
