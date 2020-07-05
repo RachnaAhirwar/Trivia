@@ -139,6 +139,7 @@ width: 100%;
 <div class="fakeimg" style="height:60px;"><a href="/pages/rate_ques">Rate a question</a></div><br>
 </div>
 <div class="main">
+<% @questions.each do |question| %>
 <h2><%= @question.question %></h2>
 <ul>
 <li><h2><%= @question.option1 %></h2></li>
@@ -146,6 +147,7 @@ width: 100%;
 <li><h2><%= @question.option3 %></h2></li>
 <li><h2><%= @question.option4 %></h2></li>
 </ul>
+<% end %>
 <button type="button">Next Question</button>
 </div>
 </div>
