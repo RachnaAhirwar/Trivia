@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get '/questions/:id', to: 'questions#show', as: 'question'
   get '/answers/:id' , to: 'answers#show' , as: 'answer'
   get '/questions' , to: 'questions#index' , as: 'questions'
+  get 'pages/categories', to: 'pages#categories'
 end

@@ -17,13 +17,13 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  ###host: localhost
-  ###username: postgres
-  ###password: rachna10893
+  host: localhost
+  username: postgres
+  password: rachna10893
 
-  host: postgres://dysknbid:ylWYTeUuBmJebg_17onk-9kzBu0iMvtR@ruby.db.elephantsql.com:5432/dysknbid
-  username: dysknbid
-  password: ylWYTeUuBmJebg_17onk-9kzBu0iMvtR
+  ###host: postgres://dysknbid:ylWYTeUuBmJebg_17onk-9kzBu0iMvtR@ruby.db.elephantsql.com:5432/dysknbid
+  ###username: dysknbid
+  ###password: ylWYTeUuBmJebg_17onk-9kzBu0iMvtR
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

@@ -115,7 +115,6 @@ flex-direction: column;
 .navbar a {
 float: none;
 width: 100%;
-
 }
 }
 </style>
@@ -134,19 +133,26 @@ width: 100%;
 
 <div class="row">
 <div class="side">
-<div class="fakeimg" style="height:60px;"><a href="/pages/categories">Play trivia</a></div><br>
+<div class="fakeimg" style="height:60px;"><a href="/questions/3">Play trivia</a></div><br>
 <div class="fakeimg" style="height:60px;"><a href="/pages/scoreboard">View scoreboard</a></div><br>
 <div class="fakeimg" style="height:60px;"><a href="/pages/add_ques">Add a new question</a></div><br>
 <div class="fakeimg" style="height:60px;"><a href="/pages/rate_ques">Rate a question</a></div><br>
 </div>
 <div class="main">
-    <h5> Hi! You can start a new game/ add questions/ view leaderboard!! </h5>
+<h2><%= @question.question %></h2>
+<ul>
+<li><h2><%= @question.option1 %></h2></li>
+<li><h2><%= @question.option2 %></h2></li>
+<li><h2><%= @question.option3 %></h2></li>
+<li><h2><%= @question.option4 %></h2></li>
+</ul>
+<button type="button"><a href="/questions/<%= @question.id=Random.rand(3...9) %> ">Next Question</a></button>
 </div>
 </div>
-
 <div class="footer">
 <h5>Designed by Rachna</h5>
 </div>
 
 </body>
 </html>
+
